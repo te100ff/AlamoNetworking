@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		184DA1722641D63B003ADFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DA1712641D63B003ADFD1 /* AppDelegate.swift */; };
 		184DA1742641D63B003ADFD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DA1732641D63B003ADFD1 /* SceneDelegate.swift */; };
-		184DA1762641D63B003ADFD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DA1752641D63B003ADFD1 /* ViewController.swift */; };
+		184DA1762641D63B003ADFD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DA1752641D63B003ADFD1 /* MainViewController.swift */; };
 		184DA1792641D63B003ADFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184DA1772641D63B003ADFD1 /* Main.storyboard */; };
 		184DA17B2641D63C003ADFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184DA17A2641D63C003ADFD1 /* Assets.xcassets */; };
 		184DA17E2641D63C003ADFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184DA17C2641D63C003ADFD1 /* LaunchScreen.storyboard */; };
+		189EE85126427BF500892CD5 /* CharactersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE85026427BF500892CD5 /* CharactersCollectionViewController.swift */; };
+		189EE85326427C1D00892CD5 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE85226427C1D00892CD5 /* CharacterCell.swift */; };
+		775D6291690D233B9F35541F /* Pods_AlamoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED866086BA61EBD04F437F0A /* Pods_AlamoNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		184DA16E2641D63B003ADFD1 /* AlamoNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184DA1712641D63B003ADFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184DA1732641D63B003ADFD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		184DA1752641D63B003ADFD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		184DA1752641D63B003ADFD1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		184DA1782641D63B003ADFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		184DA17A2641D63C003ADFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184DA17D2641D63C003ADFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184DA17F2641D63C003ADFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189EE85026427BF500892CD5 /* CharactersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewController.swift; sourceTree = "<group>"; };
+		189EE85226427C1D00892CD5 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		34EA86FFBD33D39D2AF4C97D /* Pods-AlamoNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoNetworking.debug.xcconfig"; path = "Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		CE128AA8909513C1AB1FC42F /* Pods-AlamoNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoNetworking.release.xcconfig"; path = "Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		ED866086BA61EBD04F437F0A /* Pods_AlamoNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775D6291690D233B9F35541F /* Pods_AlamoNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				184DA1702641D63B003ADFD1 /* AlamoNetworking */,
 				184DA16F2641D63B003ADFD1 /* Products */,
+				5457EC59EC4ED55DB8A1A49A /* Pods */,
+				C678E7B1CAEDE38A412F7CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,32 @@
 			children = (
 				184DA1712641D63B003ADFD1 /* AppDelegate.swift */,
 				184DA1732641D63B003ADFD1 /* SceneDelegate.swift */,
-				184DA1752641D63B003ADFD1 /* ViewController.swift */,
+				184DA1752641D63B003ADFD1 /* MainViewController.swift */,
 				184DA1772641D63B003ADFD1 /* Main.storyboard */,
+				189EE85226427C1D00892CD5 /* CharacterCell.swift */,
+				189EE85026427BF500892CD5 /* CharactersCollectionViewController.swift */,
 				184DA17A2641D63C003ADFD1 /* Assets.xcassets */,
 				184DA17C2641D63C003ADFD1 /* LaunchScreen.storyboard */,
 				184DA17F2641D63C003ADFD1 /* Info.plist */,
 			);
 			path = AlamoNetworking;
+			sourceTree = "<group>";
+		};
+		5457EC59EC4ED55DB8A1A49A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34EA86FFBD33D39D2AF4C97D /* Pods-AlamoNetworking.debug.xcconfig */,
+				CE128AA8909513C1AB1FC42F /* Pods-AlamoNetworking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C678E7B1CAEDE38A412F7CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED866086BA61EBD04F437F0A /* Pods_AlamoNetworking.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184DA1822641D63C003ADFD1 /* Build configuration list for PBXNativeTarget "AlamoNetworking" */;
 			buildPhases = (
+				7F7427F0D733D1ECAB7D2D7C /* [CP] Check Pods Manifest.lock */,
 				184DA16A2641D63B003ADFD1 /* Sources */,
 				184DA16B2641D63B003ADFD1 /* Frameworks */,
 				184DA16C2641D63B003ADFD1 /* Resources */,
+				4E24B751787FAE1616A1A197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +164,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E24B751787FAE1616A1A197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F7427F0D733D1ECAB7D2D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlamoNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		184DA16A2641D63B003ADFD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184DA1762641D63B003ADFD1 /* ViewController.swift in Sources */,
+				189EE85326427C1D00892CD5 /* CharacterCell.swift in Sources */,
+				184DA1762641D63B003ADFD1 /* MainViewController.swift in Sources */,
 				184DA1722641D63B003ADFD1 /* AppDelegate.swift in Sources */,
+				189EE85126427BF500892CD5 /* CharactersCollectionViewController.swift in Sources */,
 				184DA1742641D63B003ADFD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		184DA1832641D63C003ADFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EA86FFBD33D39D2AF4C97D /* Pods-AlamoNetworking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +373,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TestovStanislav.AlamoNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		184DA1842641D63C003ADFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE128AA8909513C1AB1FC42F /* Pods-AlamoNetworking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TestovStanislav.AlamoNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
