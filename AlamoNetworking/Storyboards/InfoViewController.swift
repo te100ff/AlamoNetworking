@@ -13,8 +13,11 @@ class InfoViewController: UIViewController {
     
     var character: Character!
     
+    private var spinner: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner = showSpinner(in: view)
         fetchImage()
         characterInfo.text = character.description
     }
@@ -26,9 +29,22 @@ class InfoViewController: UIViewController {
         DispatchQueue.global().async {
             guard let image = try? Data(contentsOf: url) else { return }
             DispatchQueue.main.async {
+                self.spinner.stopAnimating()
                 self.characterImage.image = UIImage(data: image)
             }
         }
+    }
+    
+    private func showSpinner(in view: UIView) -> UIActivityIndicatorView {
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.color = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
+        activityIndicator.startAnimating()
+        activityIndicator.center = view.center
+        activityIndicator.hidesWhenStopped = true
+        
+        view.addSubview(activityIndicator)
+        
+        return activityIndicator
     }
     
 }

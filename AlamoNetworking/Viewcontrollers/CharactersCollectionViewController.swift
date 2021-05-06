@@ -22,9 +22,9 @@ class CharactersCollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "info" {
-        guard let infoVC = segue.destination as? InfoViewController else { return }
-        infoVC.character = characters[characterIndex]
-    }
+            guard let infoVC = segue.destination as? InfoViewController else { return }
+            infoVC.character = characters[characterIndex]
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
