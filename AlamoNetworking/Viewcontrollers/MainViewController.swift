@@ -25,13 +25,7 @@ class MainViewController: UIViewController {
                     charachterVC.collectionView.reloadData()
                 }
             }
-        } else if segue.identifier == "about" {
-            guard let aboutVC = segue.destination as? AboutViewController else { return }
-            NetworkManager.shared.alamofireFetchData(url: URLList.bookImage.rawValue) { value in
-                guard let image = value as? UIImage else { return }
-                aboutVC.bookImage.image = image
-            }
-        }
+        } 
     }
 
 }
