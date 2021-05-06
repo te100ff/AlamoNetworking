@@ -25,7 +25,7 @@
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="About book"/>
                                         <connections>
-                                            <segue destination="VS0-HB-uis" kind="show" id="hS7-2k-lob"/>
+                                            <segue destination="VS0-HB-uis" kind="show" identifier="about" id="hS7-2k-lob"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbz-5s-rqt">
@@ -33,7 +33,7 @@
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Characters"/>
                                         <connections>
-                                            <segue destination="roL-ZW-Yah" kind="show" id="hAs-DV-L3o"/>
+                                            <segue destination="roL-ZW-Yah" kind="show" identifier="characters" id="hAs-DV-L3o"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -46,7 +46,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Fnh-kT-9e3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0vQ-V0-5CP"/>
                             <constraint firstItem="wlq-cJ-p05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2I0-3P-Uo6"/>
@@ -63,30 +63,46 @@
         <!--About-->
         <scene sceneID="gbF-zD-D1u">
             <objects>
-                <viewController id="VS0-HB-uis" sceneMemberID="viewController">
+                <viewController id="VS0-HB-uis" customClass="AboutViewController" customModule="AlamoNetworking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="byh-dg-dN4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-RU-V4c">
-                                <rect key="frame" x="87" y="348" width="240" height="200"/>
-                                <color key="backgroundColor" red="0.082008685119999994" green="0.1163361453" blue="0.80995315310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="104" width="382" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Asd-6C-Z2B"/>
-                                    <constraint firstAttribute="width" constant="240" id="HPC-mW-Pk9"/>
+                                    <constraint firstAttribute="height" constant="200" id="aPy-vg-YeX"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-r1-yuu">
+                                <rect key="frame" x="16" y="312" width="382" height="534"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">A Game of Thrones
+
+Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil war, known alternately as "Robert's Rebellion" and the "War of the Usurper." Prince Rhaegar Targaryen kidnapped Lyanna Stark, arousing the ire of her family and of her betrothed, Lord Robert Baratheon (the war's titular rebel). The Mad King, Aerys II Targaryen, had Lyanna's father and eldest brother executed when they demanded her safe return. Her second brother, Eddard, joined his boyhood friend Robert Baratheon and Jon Arryn, with whom they had been fostered as children, in declaring war against the ruling Targaryen dynasty, securing the allegiances of House Tully and House Arryn through a network of dynastic marriages (Lord Eddard to Catelyn Tully and Lord Arryn to Lysa Tully). The powerful House Tyrell continued to support the King, but House Lannister and House Martell both stalled due to insults against their houses by the Targaryens. The civil war climaxed with the Battle of the Trident, when Prince Rhaegar was killed in battle by Robert Baratheon. The Lannisters finally agreed to support King Aerys, but then brutally turned against him, sacking the capital at King's Landing. Jaime Lannister of the Kingsguard betrayed and murdered King Aerys and House Lannister swore loyalty to Robert Baratheon. The Tyrells and remaining royalists surrendered and Robert Baratheon was declared King of the Seven Kingdoms. Unfortunately, during the war, Lyanna Stark had died, apparently of illness shortly after her brother captured the fortress where she'd been held captive; Robert Baratheon instead married Cersei Lannister to cement the alliance with her House. Despite Robert's victory, the Mad King's younger son Viserys and only daughter Daenerys were taken to safety across the sea by loyal retainers. After the war House Martell chose a path of isolation, since Prince Doran's sister Elia Martell (Prince Rhaegar's wife) and her young children had been killed by knights sworn to House Lannister during the storming of the capital.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qQd-ks-1xO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OfR-RU-V4c" firstAttribute="centerY" secondItem="byh-dg-dN4" secondAttribute="centerY" id="gW7-VR-flj"/>
-                            <constraint firstItem="OfR-RU-V4c" firstAttribute="centerX" secondItem="byh-dg-dN4" secondAttribute="centerX" id="qk0-Ld-b6b"/>
+                            <constraint firstItem="qQd-ks-1xO" firstAttribute="bottom" secondItem="hEy-r1-yuu" secondAttribute="bottom" constant="16" id="2Ad-AE-tpo"/>
+                            <constraint firstItem="hEy-r1-yuu" firstAttribute="top" secondItem="OfR-RU-V4c" secondAttribute="bottom" constant="8" id="Gt0-MF-kDm"/>
+                            <constraint firstItem="OfR-RU-V4c" firstAttribute="leading" secondItem="qQd-ks-1xO" secondAttribute="leading" constant="16" id="Gtq-Of-p8z"/>
+                            <constraint firstItem="qQd-ks-1xO" firstAttribute="trailing" secondItem="hEy-r1-yuu" secondAttribute="trailing" constant="16" id="Gx1-vW-VU5"/>
+                            <constraint firstItem="OfR-RU-V4c" firstAttribute="top" secondItem="qQd-ks-1xO" secondAttribute="top" constant="16" id="NaX-ez-saC"/>
+                            <constraint firstItem="hEy-r1-yuu" firstAttribute="leading" secondItem="qQd-ks-1xO" secondAttribute="leading" constant="16" id="U8k-OR-SVj"/>
+                            <constraint firstItem="qQd-ks-1xO" firstAttribute="trailing" secondItem="OfR-RU-V4c" secondAttribute="trailing" constant="16" id="ruR-wX-TBF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="qmO-f4-0S9">
                         <barButtonItem key="backBarButtonItem" title="Back" id="6Yi-EJ-E7Z"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bookImage" destination="OfR-RU-V4c" id="YiP-37-c8N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tp-xH-6ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,8 +136,8 @@
                                                 <constraint firstAttribute="width" secondItem="62P-WU-3Ex" secondAttribute="height" multiplier="1:1" id="iC8-kr-itj"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-Uy-KWh">
-                                            <rect key="frame" x="65.5" y="210" width="71" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-Uy-KWh">
+                                            <rect key="frame" x="0.0" y="210" width="202" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -131,11 +147,11 @@
                                         <constraint firstItem="rfL-Uy-KWh" firstAttribute="top" secondItem="62P-WU-3Ex" secondAttribute="bottom" constant="8" id="BvG-bk-ZxV"/>
                                         <constraint firstItem="62P-WU-3Ex" firstAttribute="top" secondItem="Omr-FV-nkm" secondAttribute="top" id="gRM-1f-61u"/>
                                         <constraint firstItem="62P-WU-3Ex" firstAttribute="leading" secondItem="Omr-FV-nkm" secondAttribute="leading" id="n25-r5-Asj"/>
+                                        <constraint firstItem="rfL-Uy-KWh" firstAttribute="width" secondItem="Omr-FV-nkm" secondAttribute="width" id="qHt-CB-7zt"/>
                                         <constraint firstItem="rfL-Uy-KWh" firstAttribute="centerX" secondItem="62P-WU-3Ex" secondAttribute="centerX" id="rmB-nH-gUb"/>
                                         <constraint firstAttribute="trailing" secondItem="62P-WU-3Ex" secondAttribute="trailing" id="ziR-sB-ME0"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <size key="customSize" width="202" height="247"/>
                                 <connections>
                                     <outlet property="characterImage" destination="62P-WU-3Ex" id="oTP-aL-IwV"/>
@@ -174,14 +190,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
