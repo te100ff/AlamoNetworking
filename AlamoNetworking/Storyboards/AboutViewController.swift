@@ -6,31 +6,30 @@
 //
 
 import UIKit
+import Alamofire
 
 class AboutViewController: UIViewController {
     @IBOutlet weak var bookImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
+        fetchImage()
     }
     
-    private func fetchData() {
-        guard let url = URL(string: URLList.bookImage.rawValue) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
+    private func fetchImage() {
+        AF.request(URLList.bookImage.rawValue)
+            .validate()
+            .responseData { responseData in
+                switch responseData.result {
+                case .success(let data):
+                    guard let image = UIImage(data: data) else { return }
+                    self.bookImage.image = image
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
             }
-            
-            guard let image = UIImage(data: data) else { return }
-            
-            DispatchQueue.main.async {
-                self.bookImage.image = image
-            }
-        }.resume()
+        
     }
-    
     
     
 }
