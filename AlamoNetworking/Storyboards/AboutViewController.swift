@@ -13,10 +13,14 @@ class AboutViewController: UIViewController {
     
     var spinner: UIActivityIndicatorView!
     
+    var topCollor: UIColor!
+    var bottomColor: UIColor!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchImage()
         spinner = showSpinner(in: bookImage)
+        view.addVerticalGradientLayer(topColor: topCollor, bottomColor: bottomColor)
     }
     
     private func fetchImage() {

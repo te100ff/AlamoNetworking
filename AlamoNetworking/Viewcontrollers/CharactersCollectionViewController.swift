@@ -13,10 +13,18 @@ class CharactersCollectionViewController: UICollectionViewController {
     
     var characters: [Character] = []
     var spiner: UIActivityIndicatorView!
+    
     var characterIndex: Int!
+    var topCollor: UIColor!
+    var bottomColor: UIColor!
+    var x: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        x = UIView(frame: collectionView.bounds)
+        x.addVerticalGradientLayer(topColor: topCollor, bottomColor: bottomColor)
+        collectionView.addSubview(x)
+        collectionView.backgroundView = x
         spiner = showSpinner(in: view)
     }
     
@@ -24,6 +32,8 @@ class CharactersCollectionViewController: UICollectionViewController {
         if segue.identifier == "info" {
             guard let infoVC = segue.destination as? InfoViewController else { return }
             infoVC.character = characters[characterIndex]
+            infoVC.topCollor = topCollor
+            infoVC.bottomColor = bottomColor
         }
     }
     

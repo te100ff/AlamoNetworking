@@ -13,10 +13,14 @@ class InfoViewController: UIViewController {
     
     var character: Character!
     
+    var topCollor: UIColor!
+    var bottomColor: UIColor!
+    
     private var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: topCollor, bottomColor: bottomColor)
         spinner = showSpinner(in: view)
         fetchImage()
         characterInfo.text = character.description

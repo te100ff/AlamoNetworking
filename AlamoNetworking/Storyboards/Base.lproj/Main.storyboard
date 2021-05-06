@@ -23,7 +23,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-Aj-LQT">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                        <state key="normal" title="About book"/>
+                                        <state key="normal" title="About book">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="VS0-HB-uis" kind="show" identifier="about" id="hS7-2k-lob"/>
                                         </connections>
@@ -31,7 +33,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbz-5s-rqt">
                                         <rect key="frame" x="0.0" y="128" width="169" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                        <state key="normal" title="Characters"/>
+                                        <state key="normal" title="Characters">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="roL-ZW-Yah" kind="show" identifier="characters" id="hAs-DV-L3o"/>
                                         </connections>
@@ -46,7 +50,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Fnh-kT-9e3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0vQ-V0-5CP"/>
                             <constraint firstItem="wlq-cJ-p05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2I0-3P-Uo6"/>
@@ -76,17 +80,16 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-r1-yuu">
                                 <rect key="frame" x="16" y="312" width="382" height="534"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">A Game of Thrones
 
 Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil war, known alternately as "Robert's Rebellion" and the "War of the Usurper." Prince Rhaegar Targaryen kidnapped Lyanna Stark, arousing the ire of her family and of her betrothed, Lord Robert Baratheon (the war's titular rebel). The Mad King, Aerys II Targaryen, had Lyanna's father and eldest brother executed when they demanded her safe return. Her second brother, Eddard, joined his boyhood friend Robert Baratheon and Jon Arryn, with whom they had been fostered as children, in declaring war against the ruling Targaryen dynasty, securing the allegiances of House Tully and House Arryn through a network of dynastic marriages (Lord Eddard to Catelyn Tully and Lord Arryn to Lysa Tully). The powerful House Tyrell continued to support the King, but House Lannister and House Martell both stalled due to insults against their houses by the Targaryens. The civil war climaxed with the Battle of the Trident, when Prince Rhaegar was killed in battle by Robert Baratheon. The Lannisters finally agreed to support King Aerys, but then brutally turned against him, sacking the capital at King's Landing. Jaime Lannister of the Kingsguard betrayed and murdered King Aerys and House Lannister swore loyalty to Robert Baratheon. The Tyrells and remaining royalists surrendered and Robert Baratheon was declared King of the Seven Kingdoms. Unfortunately, during the war, Lyanna Stark had died, apparently of illness shortly after her brother captured the fortress where she'd been held captive; Robert Baratheon instead married Cersei Lannister to cement the alliance with her House. Despite Robert's victory, the Mad King's younger son Viserys and only daughter Daenerys were taken to safety across the sea by loyal retainers. After the war House Martell chose a path of isolation, since Prince Doran's sister Elia Martell (Prince Rhaegar's wife) and her young children had been killed by knights sworn to House Lannister during the storming of the capital.</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qQd-ks-1xO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="qQd-ks-1xO" firstAttribute="bottom" secondItem="hEy-r1-yuu" secondAttribute="bottom" constant="16" id="2Ad-AE-tpo"/>
                             <constraint firstItem="hEy-r1-yuu" firstAttribute="top" secondItem="OfR-RU-V4c" secondAttribute="bottom" constant="8" id="Gt0-MF-kDm"/>
@@ -115,7 +118,7 @@ Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil 
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YNH-h1-iTN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XB1-Rc-RdY">
                             <size key="itemSize" width="202" height="247"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -139,7 +142,7 @@ Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil 
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-Uy-KWh">
                                             <rect key="frame" x="0.0" y="210" width="202" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -193,14 +196,14 @@ Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil 
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn4-Ce-yyF">
                                         <rect key="frame" x="155.5" y="339" width="71" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jci-Tl-Tth"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="jci-Tl-Tth" firstAttribute="trailing" secondItem="chM-gU-xkC" secondAttribute="trailing" constant="16" id="1Q3-Fu-Eji"/>
                             <constraint firstItem="chM-gU-xkC" firstAttribute="leading" secondItem="jci-Tl-Tth" secondAttribute="leading" constant="16" id="N78-Pd-Jwm"/>
@@ -225,6 +228,7 @@ Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil 
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8jt-nG-DlV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemGray2Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -237,11 +241,11 @@ Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil 
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
