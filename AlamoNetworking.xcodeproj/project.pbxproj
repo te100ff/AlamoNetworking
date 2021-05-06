@@ -18,6 +18,7 @@
 		189EE8552643B48A00892CD5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE8542643B48A00892CD5 /* Character.swift */; };
 		189EE8572643B53700892CD5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE8562643B53700892CD5 /* NetworkManager.swift */; };
 		189EE85D2643C79A00892CD5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE85C2643C79A00892CD5 /* AboutViewController.swift */; };
+		18D919CF2643F15A00959435 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D919CE2643F15A00959435 /* InfoViewController.swift */; };
 		775D6291690D233B9F35541F /* Pods_AlamoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED866086BA61EBD04F437F0A /* Pods_AlamoNetworking.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		189EE8542643B48A00892CD5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		189EE8562643B53700892CD5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		189EE85C2643C79A00892CD5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = AlamoNetworking/Storyboards/AboutViewController.swift; sourceTree = SOURCE_ROOT; };
+		18D919CE2643F15A00959435 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = AlamoNetworking/Storyboards/InfoViewController.swift; sourceTree = SOURCE_ROOT; };
 		34EA86FFBD33D39D2AF4C97D /* Pods-AlamoNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoNetworking.debug.xcconfig"; path = "Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		CE128AA8909513C1AB1FC42F /* Pods-AlamoNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoNetworking.release.xcconfig"; path = "Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		ED866086BA61EBD04F437F0A /* Pods_AlamoNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		189EE8582643C70A00892CD5 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				18D919CE2643F15A00959435 /* InfoViewController.swift */,
 				184DA1752641D63B003ADFD1 /* MainViewController.swift */,
 				189EE85C2643C79A00892CD5 /* AboutViewController.swift */,
 				189EE85026427BF500892CD5 /* CharactersCollectionViewController.swift */,
@@ -96,8 +99,8 @@
 		189EE8592643C72E00892CD5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				184DA17C2641D63C003ADFD1 /* LaunchScreen.storyboard */,
 				184DA1772641D63B003ADFD1 /* Main.storyboard */,
+				184DA17C2641D63C003ADFD1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				184DA1762641D63B003ADFD1 /* MainViewController.swift in Sources */,
 				184DA1722641D63B003ADFD1 /* AppDelegate.swift in Sources */,
 				189EE8572643B53700892CD5 /* NetworkManager.swift in Sources */,
+				18D919CF2643F15A00959435 /* InfoViewController.swift in Sources */,
 				189EE8552643B48A00892CD5 /* Character.swift in Sources */,
 				189EE85126427BF500892CD5 /* CharactersCollectionViewController.swift in Sources */,
 				189EE85D2643C79A00892CD5 /* AboutViewController.swift in Sources */,

@@ -13,12 +13,19 @@ class CharactersCollectionViewController: UICollectionViewController {
     
     var characters: [Character] = []
     var spiner: UIActivityIndicatorView!
+    var characterIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         spiner = showSpinner(in: view)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "info" {
+        guard let infoVC = segue.destination as? InfoViewController else { return }
+        infoVC.character = characters[characterIndex]
+    }
+    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         characters.count
@@ -32,6 +39,10 @@ class CharactersCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        characterIndex = indexPath.item
+        performSegue(withIdentifier: "info", sender: nil)
+    }
     
 }
 

@@ -77,9 +77,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-r1-yuu">
                                 <rect key="frame" x="16" y="312" width="382" height="534"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">A Game of Thrones
+                                <string key="text">A Game of Thrones
 
-Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil war, known alternately as "Robert's Rebellion" and the "War of the Usurper." Prince Rhaegar Targaryen kidnapped Lyanna Stark, arousing the ire of her family and of her betrothed, Lord Robert Baratheon (the war's titular rebel). The Mad King, Aerys II Targaryen, had Lyanna's father and eldest brother executed when they demanded her safe return. Her second brother, Eddard, joined his boyhood friend Robert Baratheon and Jon Arryn, with whom they had been fostered as children, in declaring war against the ruling Targaryen dynasty, securing the allegiances of House Tully and House Arryn through a network of dynastic marriages (Lord Eddard to Catelyn Tully and Lord Arryn to Lysa Tully). The powerful House Tyrell continued to support the King, but House Lannister and House Martell both stalled due to insults against their houses by the Targaryens. The civil war climaxed with the Battle of the Trident, when Prince Rhaegar was killed in battle by Robert Baratheon. The Lannisters finally agreed to support King Aerys, but then brutally turned against him, sacking the capital at King's Landing. Jaime Lannister of the Kingsguard betrayed and murdered King Aerys and House Lannister swore loyalty to Robert Baratheon. The Tyrells and remaining royalists surrendered and Robert Baratheon was declared King of the Seven Kingdoms. Unfortunately, during the war, Lyanna Stark had died, apparently of illness shortly after her brother captured the fortress where she'd been held captive; Robert Baratheon instead married Cersei Lannister to cement the alliance with her House. Despite Robert's victory, the Mad King's younger son Viserys and only daughter Daenerys were taken to safety across the sea by loyal retainers. After the war House Martell chose a path of isolation, since Prince Doran's sister Elia Martell (Prince Rhaegar's wife) and her young children had been killed by knights sworn to House Lannister during the storming of the capital.</mutableString>
+Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil war, known alternately as "Robert's Rebellion" and the "War of the Usurper." Prince Rhaegar Targaryen kidnapped Lyanna Stark, arousing the ire of her family and of her betrothed, Lord Robert Baratheon (the war's titular rebel). The Mad King, Aerys II Targaryen, had Lyanna's father and eldest brother executed when they demanded her safe return. Her second brother, Eddard, joined his boyhood friend Robert Baratheon and Jon Arryn, with whom they had been fostered as children, in declaring war against the ruling Targaryen dynasty, securing the allegiances of House Tully and House Arryn through a network of dynastic marriages (Lord Eddard to Catelyn Tully and Lord Arryn to Lysa Tully). The powerful House Tyrell continued to support the King, but House Lannister and House Martell both stalled due to insults against their houses by the Targaryens. The civil war climaxed with the Battle of the Trident, when Prince Rhaegar was killed in battle by Robert Baratheon. The Lannisters finally agreed to support King Aerys, but then brutally turned against him, sacking the capital at King's Landing. Jaime Lannister of the Kingsguard betrayed and murdered King Aerys and House Lannister swore loyalty to Robert Baratheon. The Tyrells and remaining royalists surrendered and Robert Baratheon was declared King of the Seven Kingdoms. Unfortunately, during the war, Lyanna Stark had died, apparently of illness shortly after her brother captured the fortress where she'd been held captive; Robert Baratheon instead married Cersei Lannister to cement the alliance with her House. Despite Robert's victory, the Mad King's younger son Viserys and only daughter Daenerys were taken to safety across the sea by loyal retainers. After the war House Martell chose a path of isolation, since Prince Doran's sister Elia Martell (Prince Rhaegar's wife) and her young children had been killed by knights sworn to House Lannister during the storming of the capital.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -165,10 +165,57 @@ Fifteen years prior to the novel, the Seven Kingdoms were torn apart by a civil 
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Esk-J8-0yy"/>
+                    <connections>
+                        <segue destination="B3I-fL-ejL" kind="show" identifier="info" id="CGT-cO-8tH"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ias-Vs-kWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4715.9420289855079" y="509.59821428571428"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="S7C-1j-Stu">
+            <objects>
+                <viewController id="B3I-fL-ejL" customClass="InfoViewController" customModule="AlamoNetworking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Hd-Ho-0Fv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="chM-gU-xkC">
+                                <rect key="frame" x="16" y="120" width="382" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ek-GP-tfK">
+                                        <rect key="frame" x="71" y="0.0" width="240" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="tkC-nR-Em7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn4-Ce-yyF">
+                                        <rect key="frame" x="155.5" y="339" width="71" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jci-Tl-Tth"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jci-Tl-Tth" firstAttribute="trailing" secondItem="chM-gU-xkC" secondAttribute="trailing" constant="16" id="1Q3-Fu-Eji"/>
+                            <constraint firstItem="chM-gU-xkC" firstAttribute="leading" secondItem="jci-Tl-Tth" secondAttribute="leading" constant="16" id="N78-Pd-Jwm"/>
+                            <constraint firstItem="chM-gU-xkC" firstAttribute="top" secondItem="jci-Tl-Tth" secondAttribute="top" constant="32" id="xvi-TN-4co"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eki-bG-w04"/>
+                    <connections>
+                        <outlet property="characterImage" destination="2Ek-GP-tfK" id="Ey0-4e-QyP"/>
+                        <outlet property="characterInfo" destination="zn4-Ce-yyF" id="diB-Zt-3wr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDu-i1-xZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5710.144927536232" y="510.9375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gsL-Jq-bmw">

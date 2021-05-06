@@ -30,4 +30,14 @@ struct Character: Decodable {
         
         return characters
     }
+    
+    var description: String {
+        """
+        Name: \(fullName ?? "unknown")
+        
+        Title: \(title ?? "unknown")
+        
+        Family: \(family ?? "unknown")
+        """
+    }
 }
