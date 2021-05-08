@@ -18,6 +18,7 @@
 		189EE8552643B48A00892CD5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE8542643B48A00892CD5 /* Character.swift */; };
 		189EE8572643B53700892CD5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE8562643B53700892CD5 /* NetworkManager.swift */; };
 		189EE85D2643C79A00892CD5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE85C2643C79A00892CD5 /* AboutViewController.swift */; };
+		18BFD6A32647282B00DB7399 /* CharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFD6A22647282B00DB7399 /* CharacterImageView.swift */; };
 		18D919CF2643F15A00959435 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D919CE2643F15A00959435 /* InfoViewController.swift */; };
 		775D6291690D233B9F35541F /* Pods_AlamoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED866086BA61EBD04F437F0A /* Pods_AlamoNetworking.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		189EE8542643B48A00892CD5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		189EE8562643B53700892CD5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		189EE85C2643C79A00892CD5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = AlamoNetworking/Storyboards/AboutViewController.swift; sourceTree = SOURCE_ROOT; };
+		18BFD6A22647282B00DB7399 /* CharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageView.swift; sourceTree = "<group>"; };
 		18D919CE2643F15A00959435 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = AlamoNetworking/Storyboards/InfoViewController.swift; sourceTree = SOURCE_ROOT; };
 		34EA86FFBD33D39D2AF4C97D /* Pods-AlamoNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoNetworking.debug.xcconfig"; path = "Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		CE128AA8909513C1AB1FC42F /* Pods-AlamoNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoNetworking.release.xcconfig"; path = "Target Support Files/Pods-AlamoNetworking/Pods-AlamoNetworking.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,12 +77,12 @@
 		184DA1702641D63B003ADFD1 /* AlamoNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				18BFD6A1264727D800DB7399 /* Views */,
 				189EE85E2643ED8500892CD5 /* NetworkManager */,
 				189EE8582643C70A00892CD5 /* Viewcontrollers */,
 				189EE8592643C72E00892CD5 /* Storyboards */,
 				189EE85B2643C76100892CD5 /* Models */,
 				189EE85A2643C74100892CD5 /* Support */,
-				189EE85226427C1D00892CD5 /* CharacterCell.swift */,
 			);
 			path = AlamoNetworking;
 			sourceTree = "<group>";
@@ -130,6 +132,15 @@
 				189EE8562643B53700892CD5 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		18BFD6A1264727D800DB7399 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				189EE85226427C1D00892CD5 /* CharacterCell.swift */,
+				18BFD6A22647282B00DB7399 /* CharacterImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5457EC59EC4ED55DB8A1A49A /* Pods */ = {
@@ -269,6 +280,7 @@
 				189EE8572643B53700892CD5 /* NetworkManager.swift in Sources */,
 				18D919CF2643F15A00959435 /* InfoViewController.swift in Sources */,
 				189EE8552643B48A00892CD5 /* Character.swift in Sources */,
+				18BFD6A32647282B00DB7399 /* CharacterImageView.swift in Sources */,
 				189EE85126427BF500892CD5 /* CharactersCollectionViewController.swift in Sources */,
 				189EE85D2643C79A00892CD5 /* AboutViewController.swift in Sources */,
 				184DA1742641D63B003ADFD1 /* SceneDelegate.swift in Sources */,

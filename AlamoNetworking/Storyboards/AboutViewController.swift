@@ -19,7 +19,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchImage()
-        spinner = showSpinner(in: bookImage)
+        spinner = showSpinner(in: view)
         view.addVerticalGradientLayer(topColor: topCollor, bottomColor: bottomColor)
     }
     
